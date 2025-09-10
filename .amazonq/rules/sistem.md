@@ -1,0 +1,34 @@
+- setiap pages ada php, css, js sendiri sendiri. misalkan folder sidebar maka di dalamnya ada php, css dan js
+- css dan js serta php untuk frontend itu ada dalam folder yang sama jadi tidak ada folder khusus css ataupun js
+- selalu baca terlebih dahulu file yang saya masukan ke konteks lalu buat codenya
+- selalu lihat struktur tabel database saya jika ingin mengkoneksikan halaman frontend dengan backend
+- tiap class yang ada di halaman berbeda harus unik dan mengandung nama awal halaman, misalkan .dashboard-container
+- awalnya buat konfigurasi base URL yang dapat mendeteksi apakah aplikasi berjalan di localhost atau hosting, .htaccess - Untuk konfigurasi server web, config dan koneksi databasenya serta querienya serta migrationnya
+- buat autentikasi user login
+- setiap container, form harus bisa mengaplikasikan warna berbeda dan dark mode
+- responsive di layar komputer, laptop, tab dan hp
+- tampilan yang simpel, menarik dan elegan
+- color palete yg digunakan : 112D4E, 3F72AF, DBE2EF, F9F7F7
+- untuk id database jika terhapus maka jika ada id baru yang masuk maka akan mengisi id yg kosong itu
+- gunakan path dinamis untuk hosting dan localhost
+- gunakan page loader pada halaman full dan juga main content, halaman full khusus refresh halaman sedangkan main content saat berpindah halaman
+- Hash URL menjadi single source of truth, dengan page loader menutupi flash visual saat refresh dan content loader untuk transisi smooth antar halaman.
+- Library harus di main layout
+- Multiple setTimeout khusus library
+- dinamis antara localhost dan hosting URL API
+- filtering client-side
+- Real-time Filter, Filter langsung bekerja saat nilai berubah
+- Global Functions, Function tersedia untuk dipanggil dari luar
+- Event listener untuk setiap filter element
+- Namespace Isolation: Setiap halaman punya namespace sendiri
+- DOM Check: Function hanya jalan di halaman yang tepat
+- Conditional Global: Function global hanya di-assign jika DOM element ada
+- Membuat file konfigurasi base URL yang dapat mendeteksi apakah aplikasi berjalan di localhost atau hosting
+- .htaccess - Untuk konfigurasi server web
+- Menggunakan BASE_URL dinamis untuk semua CSS/JS
+- menambahkan require config base url di atas untuk tiap file php
+- Timeout for AJAX - Delay 100ms untuk memastikan AJAX selesai
+- Direct Call
+- style dan js bukan pakai framework tapi native
+- gunakan loadPage('') untuk berpindah halaman
+- MainLayoutComponent digunakan untuk navigasi yg dimana merupakan fungsi utama main layout java script

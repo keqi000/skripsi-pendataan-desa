@@ -1,0 +1,107 @@
+/* Main Layout Styles */
+.main-layout-body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--lightest-color);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+.main-layout-container {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.main-layout-content {
+    flex: 1;
+    margin-left: 280px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    transition: margin-left 0.3s ease;
+    width: calc(100% - 280px);
+    max-width: calc(100% - 280px);
+    overflow-x: hidden;
+}
+
+.main-layout-content.sidebar-collapsed {
+    margin-left: 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+.main-layout-main {
+    flex: 1;
+    padding: 24px;
+    background: var(--lightest-color);
+    position: relative;
+    min-height: calc(100vh - 200px);
+}
+
+.main-layout-content-wrapper {
+    position: relative;
+    z-index: 1;
+    transition: opacity 0.3s ease;
+    opacity: 1;
+}
+
+/* Content Loader Specific to Main Layout */
+.main-layout-main .content-loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+[data-theme="dark"] .main-layout-main .content-loader {
+    background: rgba(26, 32, 44, 0.9);
+}
+
+.main-layout-main .content-loader.hidden {
+    display: none !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .main-layout-content {
+        margin-left: 0;
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .main-layout-main {
+        padding: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-layout-main {
+        padding: 12px;
+    }
+}
+
+/* Animation for content transitions */
+.main-layout-content-wrapper {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

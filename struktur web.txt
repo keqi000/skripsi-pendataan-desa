@@ -1,0 +1,68 @@
+🏛️ ADMIN KECAMATAN (Read-Only Access + Monitoring)
+1. Dashboard Utama
+•	Overview Cards: Total desa, total penduduk, ringkasan data terbaru
+•	Grafik Real-time: Tren kependudukan, ekonomi, infrastruktur
+•	Alert System: Notifikasi data yang perlu perhatian
+•	Quick Stats: Data agregat dari semua desa
+2. Monitoring Desa
+•	Daftar Desa: Status data, last update, completeness percentage
+•	Perbandingan Antar Desa: Side-by-side comparison
+•	Data Quality Check: Validasi dan konsistensi data
+3. Analisis Data
+•	Analisis Tingkat 1: Statistik dasar semua kategori data
+•	Analisis Tingkat 2: Analisis lanjutan dan korelasi
+•	Prediksi & Proyeksi: Analisis prediktif 5 tahun dan cgart, map, tren
+4. Laporan
+•	Generator Laporan: Custom report builder
+•	Template Laporan: Laporan standar pemerintah pusat
+•	Export Data: PDF, Excel, CSV
+•	Laporan Berkala: Bulanan, triwulan, tahunan
+5. Peta & Geografis
+•	Peta Interaktif: Visualisasi data per desa
+•	Overlay Data: Layer kependudukan, ekonomi, infrastruktur
+•	Analisis Spasial: Kepadatan, aksesibilitas, distribusi
+
+
+
+🏘️ USER OPERATOR DESA (Full CRUD Access)
+1. Dashboard Desa
+•	Profile Desa: Info umum, koordinat, luas wilayah
+•	Progress Data: Persentase kelengkapan data
+•	Quick Actions: Shortcut ke form input utama
+•	Recent Activities: Log aktivitas terbaru
+2. Data Umum Desa
+•	Informasi Dasar: Nama, luas, jumlah dusun/RT/RW
+•	Koordinat Geografis: Input lokasi dengan map picker
+•	Upload Peta: Peta fisik dan administratif
+3. Data Kependudukan
+•	Manajemen Penduduk:
+o	Form input penduduk (jenis kelamin, usia, agama, pekerjaan, pendidikan, pernikahan, migrasi)
+o	Bulk import dari Excel
+o	Search & filter penduduk
+•	Manajemen Keluarga:
+o	Input kepala keluarga
+o	Assign anggota keluarga
+o	Family tree view
+4. Data Ekonomi
+•	Mata Pencaharian: Input & kategorisasi pekerjaan
+•	UMKM: Registrasi dan profil usaha
+•	Pertanian/Peternakan: Input hasil produksi
+•	Pasar: Data fasilitas ekonomi
+•	Bantuan Sosial: Data warga miskin dan penerima bantuan
+5. Data Pendidikan
+•	Fasilitas Pendidikan: Input PAUD, TK, SD, SMP
+•	Kapasitas & Kondisi: Detail setiap fasilitas
+•	Mapping Siswa: Hubungan siswa dengan fasilitas
+6. Data Infrastruktur
+•	Jalan Desa: Input panjang, kondisi (baik/sedang/rusak)
+•	Jembatan: Kondisi dan lokasi
+•	Foto Dokumentasi: Upload foto infrastruktur
+7. Analisis Lokal
+•	Statistik Desa: Analisis tingkat 1 untuk desa sendiri
+•	Grafik & Chart: Visualisasi data desa
+•	Trend Analysis: Perubahan data dari waktu ke waktu
+8. Laporan Desa
+•	Laporan Rutin: Template laporan ke kecamatan
+•	Custom Report: Laporan sesuai kebutuhan
+•	Export Data: Backup data desa
+
